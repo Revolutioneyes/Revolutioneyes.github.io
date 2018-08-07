@@ -32,7 +32,6 @@ host: 0.0.0.0
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - github-pages
 
 disqus_short_name: 'revelutioneyes'
 
