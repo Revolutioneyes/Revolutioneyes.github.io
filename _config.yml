@@ -28,7 +28,7 @@ paginate: 5
 # Build settings
 markdown: kramdown
 theme: minima
-host: 0.0.0.0
+#host: 0.0.0.0
 plugins:
   - jekyll-feed
   - jekyll-paginate
