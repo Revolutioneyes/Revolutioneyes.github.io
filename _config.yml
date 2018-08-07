@@ -19,8 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:" -- desciption o
   Bringing together young visually impaired people.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://revolutioneyes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-facebook_username: Revolutioneyes
-twitter_username: twitter-username
+facebook_username: Revelutioneyes
+twitter_username: Revelutioneyes1
 
 paginate_path: 'blog/page:num/'
 paginate: 5
