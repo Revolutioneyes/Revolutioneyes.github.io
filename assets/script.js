@@ -4,9 +4,10 @@ window.onload=function() {
 }
 
 function normal() {
-  document.getElementById("nav").classList.remove("black");
+  document.getElementById("page-wrapper").classList.remove("black");
+  
 }
 
 function black() {
-  document.getElementById("nav").classList.add("black");
+  document.getElementById("page-wrapper").classList.add("black");
 }
