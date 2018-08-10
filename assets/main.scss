@@ -47,6 +47,9 @@ header.site-header {
   &:hover {
     cursor: pointer;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 

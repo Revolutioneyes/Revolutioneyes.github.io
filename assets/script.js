@@ -1,4 +1,7 @@
 window.onload=function() {
+  if(localStorage["background"] == "black") {black();}
+  if(localStorage["size"] = "big") {increase();}
+  if(localStorage["size"] = "small") {decrease();}
   document.getElementById("normal").addEventListener("click", normal);
   document.getElementById("black").addEventListener("click", black);
   document.getElementById("increase").addEventListener("click", increase);
@@ -15,6 +18,7 @@ function normal() {
   for(var i = 0; i < x.length; i++) {
     x[i].classList.remove("black");
   }
+  localStorage["background"] = "normal";
 }
 
 function black() {
@@ -27,14 +31,17 @@ function black() {
   for(var i = 0; i < x.length; i++) {
     x[i].classList.add("black");
   }
+  localStorage["background"] = "black";
 }
 
 function increase() {
   document.getElementsByTagName("body")[0].style.fontSize = "larger";
   var x = document.getElementsByTagName("body")[0].style.fontSize;
   console.log("size: " + x);
+  localStorage["size"] = "big";
 }
 
 function decrease() {
   document.getElementsByTagName("body")[0].style.fontSize = "smaller";
+  localStorage["size"] = "small";
 }
