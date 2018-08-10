@@ -4,6 +4,11 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
 
+    <div class="buttons">
+      <button id="normal" title="switch to normal view">A</button>
+      <button id="black" title="switch to black and white view">A</button>
+    </div>
+
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
