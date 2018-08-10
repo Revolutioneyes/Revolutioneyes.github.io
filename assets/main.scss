@@ -14,15 +14,42 @@ header.site-header {
   color: white;
 }
 
-.social-media {
+.buttons {
   min-width: 25%;
-  display: block;
+  display: flex;
+  flex-direction: vertical;
   right: 0;
   top: 0;
-  min-height: 55.95px;
+  min-height: 62.95px;
   position: absolute;
-
 }
+
+#normal, .size {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+#black {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.button-wrapper {
+  margin: auto 0;
+}
+
+.button {
+  margin: auto 1em auto 0;
+  font-weight: bolder;
+  font-size: 1em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
 .social-media-list {
   max-width: 25%;
   display: flex;
@@ -244,10 +271,14 @@ a {
  }
 
  /*
-  * SCRIP
+  * SCRIPT
  */
 
  .black {
    background-color: black !important;
    color: white !important;
+   &:visited {
+     background-color: black !important;
+     color: white !important;
+   }
  }
